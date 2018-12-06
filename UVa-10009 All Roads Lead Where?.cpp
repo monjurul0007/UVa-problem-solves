@@ -55,7 +55,7 @@ int main(){
             level[b] = "-1";
         }
         while(m--){
-			setLevel();
+            setLevel();
             cin >> a >> b;
             cout << bfs(b,a) << endl;
         }
