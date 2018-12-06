@@ -41,10 +41,10 @@ int main(){
     string a,b;
     scanf("%d",&t);
     while(t--){
-		if(flag)
-			cout << endl;
-		flag = true;
-		level.clear();
+	if(flag)
+	    cout << endl;
+	flag = true;
+	level.clear();
         mp.clear();
         scanf("%d %d",&n ,&m);
         for(int i = 0; i < n; i++){
