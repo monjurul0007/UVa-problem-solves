@@ -28,7 +28,7 @@ ll lcm(ll a, ll b){
 	return a/__gcd(a,b) * b;
 }
 
-ll count(int i, int cnt, vector<ll>find){
+ll generate_permutation(int i, int cnt, vector<ll>find){
 	
 	if(find.size() == cnt){
 		ll g = find[0];
@@ -65,7 +65,7 @@ int main(){
 		ll cnt = 0;
 		for(int i=1; i<=m; i++){
 			vector <ll> find;
-			x = count(0,i,find);
+			x = generate_permutation(0,i,find);
 			
 			if(i%2)
 				cnt += x;
