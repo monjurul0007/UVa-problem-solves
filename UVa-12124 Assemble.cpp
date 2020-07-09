@@ -49,7 +49,7 @@ bool find(int i, ll price, ll target){
 	}
 	
 	if(p + price <= bg)
-		res = backtrack(i+1, price+p, target);
+		res = find(i+1, price+p, target);
 	
 	return res;
 }
