@@ -35,7 +35,7 @@ void clear(){
 }
 
 
-bool backtrack(int i, ll price, ll target){
+bool find(int i, ll price, ll target){
 	if(i > comp){
 		return true;
 	}
@@ -59,7 +59,7 @@ ll bs(){
 	ll l=0,r=lt.size()-1,mid,in = lt.size();
 	while(l <= r){
 		mid = (l+r)/2;
-		if(backtrack(1,0,lt[mid])){
+		if(find(1,0,lt[mid])){
 			l = mid + 1;
 			in = lt[mid];
 		}
