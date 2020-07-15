@@ -48,11 +48,9 @@ int main(){
 	cin >> t;
 	while(t--){
 		cin >> n >> k;
-		ll sum = 0;
 		for(int i=0; i<n; i++){
 			cin >> arr[i];
 			arr[i] = abs(arr[i]);
-			sum += arr[i];
 		}
 		
 		mem(dp,-1);
