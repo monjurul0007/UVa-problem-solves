@@ -42,7 +42,7 @@ int main(){
 		int ar[n+1],ans=1,sum=0,in=1;
 		int mx=-2,mi=-1;
 
-		for(int i=0; i<n-1; i++){
+		for(int i=0; i<n-1; i++){       // Kadane's Algorithem
 			cin >> ar[i];
 			sum += ar[i];
 			
@@ -51,12 +51,7 @@ int main(){
 				in = i+2;
 			}
 			
-			if(ans < sum){
-				ans = sum;
-				mi = in;
-				mx = i+2;
-			}
-			else if(ans == sum  && mx - mi < i-in+2){
+			if(ans < sum || (ans == sum  && mx - mi < i-in+2)){
 				ans = sum;
 				mi = in;
 				mx = i+2;
